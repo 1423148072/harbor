@@ -31,7 +31,7 @@ jobs:
         password: ${{ secrets.GUOGUO }}
         logout: false
         
-    - name: Use Skopeo Tools Sync Image to Docker Hub
+    - name: Use Skopeo Tools Guo Image to Docker Hub
       run: |
         #!/usr/bin/env bash
         skopeo copy docker://docker.io/rancher/fleet-agent:v0.9.5 docker://crpi-f71uj5sql1rt1r99.cn-chengdu.personal.cr.aliyuncs.com/unicorn36/uni/fleet-agent:v0.9.5
