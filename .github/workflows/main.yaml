@@ -27,8 +27,8 @@ jobs:
       uses: docker/login-action@v2.2.0
       with:
         registry: crpi-f71uj5sql1rt1r99.cn-chengdu.personal.cr.aliyuncs.com
-        username: ${{ secrets.GUOGUO }}
-        password: ${{ secrets.GUOGUO }}
+        username: ${{ secrets.admin }}
+        password: ${{ secrets.cquissE1 }}
         logout: false
         
     - name: Use Skopeo Tools Guo Image to Docker Hub
