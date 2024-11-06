@@ -39,5 +39,6 @@ jobs:
     - name: Use Skopeo to Guo Image to Insecure Harbor Registry
       run: |
         #!/usr/bin/env bash
-        skopeo copy --dest-tls-verify=false docker://docker.io/node:20.11-alpine3.19 docker://61.128.133.74:86/common/node:20.11-alpine3.19
+        skopeo copy --dest-tls-verify=false docker://docker.io/redis:5.0.12 docker://61.128.133.74:86/common/redis:5.0.12
+
 
