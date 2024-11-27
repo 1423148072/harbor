@@ -39,8 +39,7 @@ jobs:
     - name: Use Skopeo to Guo Image to Insecure Harbor Registry
       run: |
         #!/usr/bin/env bash
-        skopeo copy --dest-tls-verify=false docker://docker.io/mysql:8.0.20 docker://x454262h22.qicp.vip:86/common/mysql:8.0.20
-
+        skopeo copy --dest-tls-verify=false docker://docker.io/postgres:14.4 docker://x454262h22.qicp.vip:86/common/postgres:14.4
 
 
 
