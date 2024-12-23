@@ -39,7 +39,7 @@ jobs:
     - name: Use Skopeo to Guo Image to Insecure Harbor Registry
       run: |
         #!/usr/bin/env bash
-        skopeo copy --dest-tls-verify=false docker://docker.io/elasticsearch:7.17.5 docker://x454262h22.qicp.vip:86/common/elasticsearch:7.17.5
+        skopeo copy --dest-tls-verify=false docker://docker.io/mambaorg/micromamba:1.4.7 docker://x454262h22.qicp.vip:86/common/mambaorg/micromamba:1.4.7
 
 
 
