@@ -32,8 +32,8 @@ jobs:
       uses: docker/login-action@v2.2.0
       with:
         registry: x454262h22.qicp.vip:86
-        username: ${{ secrets_NAME }}
-        password: ${{ secrets_PASSWORD }}
+        username: ${{ secrets.NAME }}
+        password: ${{ secrets.PASSWORD }}
         logout: false
         
     - name: Use Skopeo to Guo Image to Insecure Harbor Registry
