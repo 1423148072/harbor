@@ -39,7 +39,7 @@ jobs:
     - name: Use Skopeo to Guo Image to Insecure Harbor Registry
       run: |
         #!/usr/bin/env bash
-        skopeo copy --dest-tls-verify=false docker://docker.io/semitechnologies/weaviate:1.19.0 docker://x454262h22.qicp.vip:86/common/semitechnologies/weaviate:1.19.0
+        skopeo copy --dest-tls-verify=false docker://docker.io/langgenius/dify-api:0.15.3 docker://x454262h22.qicp.vip:86/common/dify-api:0.15.3
 
 
 
