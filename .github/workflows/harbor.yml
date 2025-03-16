@@ -39,7 +39,8 @@ jobs:
     - name: Use Skopeo to Guo Image to Insecure Harbor Registry
       run: |
         #!/usr/bin/env bash
-        skopeo copy --dest-tls-verify=false docker://docker.io/mongo:8.0.5 docker://x454262h22.qicp.vip:86/common/mongo:8.0.5
+        skopeo copy --dest-tls-verify=false docker://docker.io/jayfong/yapi:play docker://x454262h22.qicp.vip:86/common/yapi:play
+
 
 
 
