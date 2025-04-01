@@ -39,7 +39,7 @@ jobs:
     - name: Use Skopeo to Guo Image to Insecure Harbor Registry
       run: |
         #!/usr/bin/env bash
-        skopeo copy --dest-tls-verify=false docker://docker.io/rancher/rke-tools:v0.1.87 docker://x454262h22.qicp.vip:86/rancher/rke-tools:v0.1.87
+        skopeo copy --dest-tls-verify=false docker://docker.io/rancher/hyperkube:v1.21.14-rancher1 docker://x454262h22.qicp.vip:86/rancher/hyperkube:v1.21.14-rancher1
 
 
 
