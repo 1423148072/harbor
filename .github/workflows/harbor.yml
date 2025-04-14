@@ -39,7 +39,7 @@ jobs:
     - name: Use Skopeo to Guo Image to Insecure Harbor Registry
       run: |
         #!/usr/bin/env bash
-        skopeo copy --dest-tls-verify=false docker://docker.io/valkey/valkey:8 docker://x454262h22.qicp.vip:86/common/valkey:8
+        skopeo copy --dest-tls-verify=false docker://docker.io/infiniflow/ragflow:v0.17.2 docker://x454262h22.qicp.vip:86/common/ragflow:v0.17.2
 
 
 
